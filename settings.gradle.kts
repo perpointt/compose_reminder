@@ -19,5 +19,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "ComposeReminder"
+rootProject.name = "compose_reminder"
 include(":app")
