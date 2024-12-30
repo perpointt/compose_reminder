@@ -10,7 +10,7 @@ import androidx.compose.ui.platform.LocalContext
 import androidx.lifecycle.viewmodel.compose.viewModel
 
 @Composable
-fun List(viewModel: RemindersViewModel = viewModel()) {
+fun ReminderList(viewModel: RemindersViewModel = viewModel()) {
     val context = LocalContext.current
 
     LaunchedEffect(key1 = true) {
