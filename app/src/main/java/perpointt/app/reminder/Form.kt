@@ -45,10 +45,10 @@ fun Form(viewModel: RemindersViewModel = viewModel()) {
 
     Column(
         modifier = Modifier
-            .padding(12.dp)
-            .background(colorResource(R.color.dark_navy), RoundedCornerShape(16.dp))
-            .border(0.5.dp, colorResource(R.color.blue), RoundedCornerShape(16.dp))
-            .padding(top = 12.dp),
+            .padding(10.dp)
+            .background(colorResource(R.color.dark_navy), RoundedCornerShape(15.dp))
+            .border(0.5.dp, colorResource(R.color.blue), RoundedCornerShape(15.dp))
+            .padding(top = 10.dp),
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
         Text(
@@ -105,8 +105,8 @@ fun DateTimeFileds(viewModel: RemindersViewModel) {
     Column(
         modifier = Modifier
             .fillMaxWidth()
-            .padding(bottom = 8.dp, start = 8.dp, end = 8.dp),
-        verticalArrangement = Arrangement.spacedBy(8.dp),
+            .padding(bottom = 10.dp, start = 10.dp, end = 10.dp),
+        verticalArrangement = Arrangement.spacedBy(10.dp),
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
         DateInputField(viewModel)
@@ -217,7 +217,7 @@ fun CreateButton(onClick: () -> Unit) {
             keyboardController?.hide()
         },
         modifier = Modifier
-            .padding(bottom = 8.dp, start = 8.dp, end = 8.dp)
+            .padding(bottom = 10.dp, start = 10.dp, end = 10.dp)
             .fillMaxWidth()
             .background(
                 brush = Brush.horizontalGradient(
@@ -226,7 +226,7 @@ fun CreateButton(onClick: () -> Unit) {
                         colorResource(id = R.color.button_gradient_blue)
                     )
                 ),
-                shape = RoundedCornerShape(16.dp)
+                shape = RoundedCornerShape(15.dp)
             ),
         colors = ButtonDefaults.buttonColors(
             containerColor = Color.Transparent
